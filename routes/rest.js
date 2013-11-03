@@ -43,9 +43,9 @@ exports.api_rest = {
         var _api_module = req.params._module_;
         var _api_name = req.params.func;
 
-        var _action = require(__dirname + '/../modules/rest/' + _api_module + '/' + _api_name + '-' +req.params.version +  '.js');
+        var _action = require(__dirname + '/../modules/' + _api_module + '/' + _api_name + '-' +req.params.version +  '.js');
         var _config = {
-            '_module_' : require(__dirname + '/../modules/rest/' + _api_module + '/config.json'),
+            '_module_' : require(__dirname + '/../modules/' + _api_module + '/config.json'),
             '_api_' : _action.config
         };
 
@@ -78,9 +78,9 @@ exports.api_rest = {
         var _api_module = req.params._module_;
         var _api_name = req.params.func;
 
-        var _action = require(__dirname + '/../modules/rest/' + _api_module + '/' + _api_name + '-' +req.params.version +  '.js');
+        var _action = require(__dirname + '/../modules/' + _api_module + '/' + _api_name + '-' +req.params.version +  '.js');
         var _config = {
-            '_module_' : require(__dirname + '/../modules/rest/' + _api_module + '/config.json'),
+            '_module_' : require(__dirname + '/../modules/' + _api_module + '/config.json'),
             '_api_' : _action.config
         };
 
@@ -97,9 +97,9 @@ exports.api_rest = {
         var _api_module = req.params._module_;
         var _api_name = req.params.func;
 
-        var _action = require(__dirname + '/../modules/rest/' + _api_module + '/' + _api_name + '-' +req.params.version +  '.js');
+        var _action = require(__dirname + '/../modules/' + _api_module + '/' + _api_name + '-' +req.params.version +  '.js');
         var _config = {
-            '_module_' : require(__dirname + '/../modules/rest/' + _api_module + '/config.json'),
+            '_module_' : require(__dirname + '/../modules/' + _api_module + '/config.json'),
             '_api_' : _action.config
         };
 
@@ -114,9 +114,9 @@ exports.api_rest = {
         var _api_module = req.params._module_;
         var _api_name = req.params.func;
 
-        var _action = require(__dirname + '/../modules/rest/' + _api_module + '/' + _api_name + '-' +req.params.version +  '.js');
+        var _action = require(__dirname + '/../modules/' + _api_module + '/' + _api_name + '-' +req.params.version +  '.js');
         var _config = {
-            '_module_' : require(__dirname + '/../modules/rest/' + _api_module + '/config.json'),
+            '_module_' : require(__dirname + '/../modules/' + _api_module + '/config.json'),
             '_api_' : _action.config
         };
 
@@ -128,23 +128,11 @@ exports.api_rest = {
     }
 
 };
-exports.index = function(req, res){
-    res.render('index', { title: 'Express' });
-};
-
-exports.sample = function(req, res){
-    res.render('sample', { title: 'Sample page' });
-};
-
-exports.api = function(req,res) {
-    res.send(req.params);
-};
-
 
 
 exports.api_docs = function(req,res) {
 
-    var _action = require(__dirname + '/../modules/rest/' + req.params.version + '/' + req.params.func + '.js');
+    var _action = require(__dirname + '/../modules/' + req.params.version + '/' + req.params.func + '.js');
     var _api_name = req.params.func;
 
     res.setHeader('X-Powered-By', _POWERED_BY_);
