@@ -1,9 +1,7 @@
-
-/*
- * REST API
+/**
+ * Created by reynold on 11/3/13.
+ * API REST
  */
-
-
 var _api_rest_send = function(req,res,_action,param){
 
     // read config.json
@@ -11,7 +9,6 @@ var _api_rest_send = function(req,res,_action,param){
 
     var _result = _action._api_.action(param);
     var _output = undefined;
-    //res.setHeader('Content-type', 'text/' + cfg._FORMAT_);
     res.setHeader('X-Powered-By', cfg._POWERED_BY_);
     res.setHeader('Developed-By', cfg._DEVELOPED_BY_);
 
@@ -37,7 +34,7 @@ var _api_rest_send = function(req,res,_action,param){
 
     res.send(_output);
 }
-exports.api_rest = {
+exports.api = {
     'get' : function(req,res)
     {
         var _api_module = req.params._module_;
@@ -129,17 +126,4 @@ exports.api_rest = {
 
 };
 
-
-exports.api_docs = function(req,res) {
-
-    var _action = require(__dirname + '/../modules/' + req.params.version + '/' + req.params.func + '.js');
-    var _api_name = req.params.func;
-
-    res.setHeader('X-Powered-By', _POWERED_BY_);
-    res.setHeader('Developed-By', _DEVELOPED_BY_);
-
-    res.send(_action.config.description);
-
-    //res.render('sample', { title: "API DOCS v"+ req.params.version +" - " + req.params.func });
-};
 
