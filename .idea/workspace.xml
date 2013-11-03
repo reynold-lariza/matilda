@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b90cf6f4-9218-4b5c-8735-b0d49ffa6366" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/about.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/about.js" />
+    <list default="true" id="b90cf6f4-9218-4b5c-8735-b0d49ffa6366" name="Default" comment="- added about page&#10;- currently working on /api/docs/ template pages">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/404.ejs" afterPath="$PROJECT_DIR$/views/404.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/500.ejs" afterPath="$PROJECT_DIR$/views/500.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.json" afterPath="$PROJECT_DIR$/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/about.ejs" afterPath="$PROJECT_DIR$/views/about.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/docs.ejs" afterPath="$PROJECT_DIR$/views/docs.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -68,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="docs.ejs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="docs.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/docs.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="116" selection-start="3561" selection-end="3561" vertical-scroll-proportion="0.48657718" vertical-offset="1325" max-vertical-offset="1921">
+            <state line="45" column="0" selection-start="1663" selection-end="1663" vertical-scroll-proportion="-8.269231" vertical-offset="550" max-vertical-offset="1904">
               <folding />
             </state>
           </provider>
@@ -80,7 +77,7 @@
       <file leaf-file-name="500.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/500.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="116" selection-start="3328" selection-end="3328" vertical-scroll-proportion="-11.807693" vertical-offset="1138" max-vertical-offset="1734">
+            <state line="45" column="0" selection-start="1691" selection-end="1691" vertical-scroll-proportion="-8.269231" vertical-offset="550" max-vertical-offset="1717">
               <folding />
             </state>
           </provider>
@@ -89,7 +86,7 @@
       <file leaf-file-name="about.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/about.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="8" selection-start="3235" selection-end="3343" vertical-scroll-proportion="-13.769231" vertical-offset="1087" max-vertical-offset="1734">
+            <state line="45" column="0" selection-start="1682" selection-end="1682" vertical-scroll-proportion="-3.3076923" vertical-offset="679" max-vertical-offset="1717">
               <folding />
             </state>
           </provider>
@@ -104,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="404.ejs" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="404.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/404.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="116" selection-start="3359" selection-end="3359" vertical-scroll-proportion="-11.153846" vertical-offset="1172" max-vertical-offset="1768">
+            <state line="39" column="25" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.5318792" vertical-offset="346" max-vertical-offset="1751">
               <folding />
             </state>
           </provider>
@@ -136,9 +133,9 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/about.js" />
         <option value="$PROJECT_DIR$/views/about.ejs" />
-        <option value="$PROJECT_DIR$/views/404.ejs" />
         <option value="$PROJECT_DIR$/views/500.ejs" />
         <option value="$PROJECT_DIR$/views/docs.ejs" />
+        <option value="$PROJECT_DIR$/views/404.ejs" />
       </list>
     </option>
   </component>
@@ -295,10 +292,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatWidth3" value="828" />
-    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatWidth2" value="154" />
-    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatWidth1" value="154" />
-    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatWidth0" value="154" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatWidth3" value="819" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatWidth2" value="153" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatWidth1" value="152" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatWidth0" value="153" />
     <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_treeWidth1" value="153" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_treeWidth2" value="154" />
@@ -1859,19 +1856,23 @@
       <created>1383477908272</created>
       <updated>1383477908272</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- added about page&#10;- currently working on /api/docs/ template pages">
+      <created>1383487601645</created>
+      <updated>1383487601645</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271605" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1893,12 +1894,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
     <MESSAGE value="- removed the /rest/ folder" />
     <MESSAGE value="- preparing routes and template for api documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="- preparing routes and template for api documentation" />
+    <MESSAGE value="- added about page&#10;- currently working on /api/docs/ template pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added about page&#10;- currently working on /api/docs/ template pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1967,13 +1971,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/docs_version.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="24" selection-start="67" selection-end="92" vertical-scroll-proportion="0.05704698" vertical-offset="0" max-vertical-offset="596">
@@ -1988,30 +1985,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/about.ejs">
+    <entry file="file://$PROJECT_DIR$/views/docs.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="8" selection-start="3235" selection-end="3343" vertical-scroll-proportion="-13.769231" vertical-offset="1087" max-vertical-offset="1734">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/404.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="116" selection-start="3359" selection-end="3359" vertical-scroll-proportion="-11.153846" vertical-offset="1172" max-vertical-offset="1768">
+        <state line="45" column="0" selection-start="1663" selection-end="1663" vertical-scroll-proportion="-8.269231" vertical-offset="550" max-vertical-offset="1904">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/500.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="116" selection-start="3328" selection-end="3328" vertical-scroll-proportion="-11.807693" vertical-offset="1138" max-vertical-offset="1734">
+        <state line="45" column="0" selection-start="1691" selection-end="1691" vertical-scroll-proportion="-8.269231" vertical-offset="550" max-vertical-offset="1717">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/docs.ejs">
+    <entry file="file://$PROJECT_DIR$/views/about.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="116" selection-start="3561" selection-end="3561" vertical-scroll-proportion="0.48657718" vertical-offset="1325" max-vertical-offset="1921">
+        <state line="45" column="0" selection-start="1682" selection-end="1682" vertical-scroll-proportion="-3.3076923" vertical-offset="679" max-vertical-offset="1717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/docs_version.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/404.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="25" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.5318792" vertical-offset="346" max-vertical-offset="1751">
           <folding />
         </state>
       </provider>
