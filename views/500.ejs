@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/error.css' />
+  </head>
+  <body>
+    <h3><%=error.code %></h3>
+    <p><% var msg = error.toString().split('/../'); %>
+        Error : Cannot find <%=msg[1]%>
+    </p>
+  </body>
+</html>
