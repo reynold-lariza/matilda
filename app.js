@@ -7,6 +7,7 @@ var express = require('express');
 var routes = require('./routes');
 var rest = require('./routes/rest');
 var docs = require('./routes/docs');
+var about = require('./routes/about');
 var http = require('http');
 var path = require('path');
 
@@ -130,6 +131,12 @@ app.get('/api', routes.index);
 app.get('/api/', routes.index);
 app.get('/docs', routes.index);
 app.get('/docs/', routes.index);
+
+
+// load about page
+app.get('/about', about.index);
+app.get('/about/', about.index);
+
 
 
 http.createServer(app).listen(app.get('port'), function(){
