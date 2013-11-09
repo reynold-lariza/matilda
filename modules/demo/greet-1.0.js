@@ -3,6 +3,35 @@
  */
 exports.config = {
     'description' : 'Greets a person',
+    'author' : 'Reynold L.',
+    'enabled' : true,
+
+    // INPUT parameters
+    'input' : {
+        'name' : {
+            'required' : true,
+            'description' : 'First name of the person',
+            'default' : 'Juan'
+        },
+        'last' : {
+            'required' : true,
+            'description' : 'Last name of the person',
+            'default' : 'Dela Cruz'
+        }
+    },
+
+    // OUTPUT parameters
+    'output' : {
+        'status' : {
+            'description' : 'Status number',
+            'default' : '200'
+        },
+        'response' : {
+            'description' : 'Response',
+            'default' : 'Greetings Juan Dela Cruz! from API v1.0'
+        }
+
+    },
 
     /**
      * This is where the main action happens

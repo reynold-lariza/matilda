@@ -2,16 +2,21 @@
  * Created by reynold on 11/3/13.
  */
 exports.config = {
-    'description' : 'Say hello to a person',
-    'author' : 'Reynold L.',
+    'description' : 'Say Hi to a person',
+
     'enabled' : true,
 
     // INPUT parameters
     'input' : {
         'name' : {
             'required' : true,
-            'description' : 'Name of the person',
+            'description' : 'First name of the person',
             'default' : 'Juan'
+        },
+        'last' : {
+            'required' : true,
+            'description' : 'Last name of the person',
+            'default' : 'Dela Cruz'
         }
     },
 
@@ -23,7 +28,7 @@ exports.config = {
         },
         'response' : {
             'description' : 'Response',
-            'default' : 'Hello Juan ! from API v2.0'
+            'default' : 'Hi Juan Dela Cruz! from API v1.0'
         }
 
     },
@@ -35,6 +40,6 @@ exports.config = {
      */
     'action' : function(param) {
 
-        return { "status" : 200, "response" : "Hello " + param.name + "! from API v2.0"};
+        return { "status" : 200, "response" : "Hi " + param.name + ' '  +param.last + "! from API v1.0" };
     }
 };

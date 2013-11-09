@@ -22,7 +22,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.favicon());
-app.use(express.logger('dev'));
+//app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
@@ -94,20 +94,20 @@ if ('development' == app.get('env')) {
 }
 
 // GET : load and execute a REST API
-app.get('/api/rest/:version(\\d+\.\\d+)/:_module_/:func',rest.api.get);
-app.get('/api/rest/:version(\\d+\.\\d+)/:_module_/:func/*',rest.api.get);
+app.get('/api/rest/:_module_/:func/:version(\\d+\.\\d+)',rest.api.get);
+app.get('/api/rest/:_module_/:func/:version(\\d+\.\\d+)/*',rest.api.get);
 
 // POST : load and execute a REST API
-app.post('/api/rest/:version(\\d+\.\\d+)/:_module_/:func',rest.api.post);
-app.post('/api/rest/:version(\\d+\.\\d+)/:_module_/:func/*',rest.api.post);
+app.post('/api/rest/:_module_/:func/:version(\\d+\.\\d+)',rest.api.post);
+app.post('/api/rest/:_module_/:func/:version(\\d+\.\\d+)/*',rest.api.post);
 
 // PUT : load and execute a REST API
-app.put('/api/rest/:version(\\d+\.\\d+)/:_module_/:func',rest.api.put);
-app.put('/api/rest/:version(\\d+\.\\d+)/:_module_/:func/*',rest.api.put);
+app.put('/api/rest/:_module_/:func/:version(\\d+\.\\d+)',rest.api.put);
+app.put('/api/rest/:_module_/:func/:version(\\d+\.\\d+)/*',rest.api.put);
 
 // DELETE : load and execute a REST API
-app.delete('/api/rest/:version(\\d+\.\\d+)/:_module_/:func',rest.api.delete);
-app.delete('/api/rest/:version(\\d+\.\\d+)/:_module_/:func/*',rest.api.delete);
+app.delete('/api/rest/:_module_/:func/:version(\\d+\.\\d+)',rest.api.delete);
+app.delete('/api/rest/:_module_/:func/:version(\\d+\.\\d+)/*',rest.api.delete);
 
 // load documentation via browser
 
@@ -115,17 +115,17 @@ app.delete('/api/rest/:version(\\d+\.\\d+)/:_module_/:func/*',rest.api.delete);
 app.get('/api/docs',docs.api_index);
 app.get('/api/docs/',docs.api_index);
 
-// load documentation at index page, but filtered by version (n.n)
-app.get('/api/docs/:version(\\d+\.\\d+)',docs.api_version);
-app.get('/api/docs/:version(\\d+\.\\d+)/',docs.api_version);
-
 // load documentation at index page for a specified module
-app.get('/api/docs/:version(\\d+\.\\d+)/:_module_',docs.api_module);
-app.get('/api/docs/:version(\\d+\.\\d+)/:_module_/',docs.api_module);
+app.get('/api/docs/:_module_',docs.api_module);
+app.get('/api/docs/:_module_/',docs.api_module);
 
 // load documentation for a specific api
-app.get('/api/docs/:version(\\d+\.\\d+)/:_module_/:func',docs.api_specific);
-app.get('/api/docs/:version(\\d+\.\\d+)/:_module_/:func/*',docs.api_specific);
+app.get('/api/docs/:_module_/:func',docs.api_module);
+app.get('/api/docs/:_module_/:func/',docs.api_module);
+
+// load documentation for a specific api
+app.get('/api/docs/:_module_/:func/:version(\\d+\.\\d+)',docs.api_specific);
+app.get('/api/docs/:_module_/:func/:version(\\d+\.\\d+)/',docs.api_specific);
 
 // load index page -- currently redirects to /api/docs/
 app.get('/', routes.index);

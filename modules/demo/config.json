@@ -1,5 +1,6 @@
 {
     "description" : "This is a module composed of APIs that are used for demonstration purposes only",
     "author" : "Reynold",
-    "date"  : "2013-11-03"
+    "date"  : "2013-11-03",
+    "enabled" : true
 }

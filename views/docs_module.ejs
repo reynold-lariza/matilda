@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+<head>
+    <%- include header.ejs %>
+</head>
+
+<body>
+
+<!-- Wrap all page content here -->
+<div id="wrap">
+
+    <!-- Fixed navbar -->
+    <%- include navbar.ejs %>
+
+    <!-- Begin page content -->
+    <div class="container">
+        <div class="page-header">
+            You may click on any of the API below to get a detailed documentation.
+        </div>
+        <div class="bs-example">
+            <table class="table table-responsive">
+                <thead>
+                <tr>
+                    <th>Method</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <%
+                data.modules.forEach(function(mod,i){
+                    if(data._module!=mod.name) return;
+
+                    mod.func.forEach(function(f,i){
+                        %>
+                <tr>
+                    <td><a href="<%=mod.name%>/<%=f.name%>/<%=f.version%>" class=""><%=f.name%></a> <small><em>(ver <%=f.version%>)</em></small></td>
+                    <td><%=f.description%></td>
+                </tr>
+
+                <%
+                    });
+
+                     }); %>
+                </tbody>
+            </table>
+        </div>
+        <!--<p>Back to main <a href="/">documentation</a> page.</p>-->
+
+    </div>
+</div>
+<%- include footer.ejs %>
+</body>
 </html>
