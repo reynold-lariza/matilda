@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b90cf6f4-9218-4b5c-8735-b0d49ffa6366" name="Default" comment="- added HTTPS/SSL support">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/test/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/footer.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/header.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/test/hi-1.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/libraries/modules.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/multi-core-app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/navbar.ejs" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/one-core-app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/demo/config.json" afterPath="$PROJECT_DIR$/modules/demo/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/docs.ejs" afterPath="$PROJECT_DIR$/views/docs.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/about.ejs" afterPath="$PROJECT_DIR$/views/about.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/about.js" afterPath="$PROJECT_DIR$/routes/about.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/docs.js" afterPath="$PROJECT_DIR$/routes/docs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/docs_module.ejs" afterPath="$PROJECT_DIR$/views/docs_module.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/docs_specific.ejs" afterPath="$PROJECT_DIR$/views/docs_specific.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/demo/greet-1.0.js" afterPath="$PROJECT_DIR$/modules/demo/greet-1.0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/demo/greet-2.0.js" afterPath="$PROJECT_DIR$/modules/demo/greet-2.0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/demo/hello-1.0.js" afterPath="$PROJECT_DIR$/modules/demo/hello-1.0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/demo/hello-2.0.js" afterPath="$PROJECT_DIR$/modules/demo/hello-2.0.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/footer.ejs" afterPath="$PROJECT_DIR$/views/footer.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/header.ejs" afterPath="$PROJECT_DIR$/views/header.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/libraries/modules.js" afterPath="$PROJECT_DIR$/core/libraries/modules.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/navbar.ejs" afterPath="$PROJECT_DIR$/views/navbar.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -44,28 +36,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="35" selection-start="3852" selection-end="3852" vertical-scroll-proportion="0.0" vertical-offset="1843" max-vertical-offset="2873">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hi-1.0.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/test/hi-1.0.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="49" selection-start="953" selection-end="953" vertical-scroll-proportion="0.0" vertical-offset="245" max-vertical-offset="867">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="docs.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/docs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="16" selection-start="1619" selection-end="1619" vertical-scroll-proportion="0.0" vertical-offset="891" max-vertical-offset="1547">
+            <state line="34" column="0" selection-start="642" selection-end="824" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1632">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/about.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="0.21864952" vertical-offset="0" max-vertical-offset="622">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/about.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="19" selection-start="383" selection-end="383" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
@@ -74,7 +66,7 @@
       <file leaf-file-name="modules.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/libraries/modules.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="22" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="1479">
+            <state line="14" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
               <folding />
             </state>
           </provider>
@@ -83,16 +75,16 @@
       <file leaf-file-name="docs.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/docs.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="775" selection-end="955" vertical-scroll-proportion="-11.807693" vertical-offset="288" max-vertical-offset="884">
+            <state line="37" column="20" selection-start="0" selection-end="1174" vertical-scroll-proportion="-12.307693" vertical-offset="309" max-vertical-offset="884">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="docs_module.ejs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="docs_module.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/docs_module.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="794" selection-end="794" vertical-scroll-proportion="0.5334477" vertical-offset="216" max-vertical-offset="1003">
+            <state line="39" column="18" selection-start="0" selection-end="1381" vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
@@ -101,8 +93,10 @@
       <file leaf-file-name="docs_specific.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/docs_specific.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="48" selection-start="1055" selection-end="1055" vertical-scroll-proportion="-10.653846" vertical-offset="352" max-vertical-offset="1020">
-              <folding />
+            <state line="91" column="0" selection-start="2673" selection-end="2673" vertical-scroll-proportion="-47.73077" vertical-offset="306" max-vertical-offset="1683">
+              <folding>
+                <element signature="n#style#0;n#span#0;n#span#0;n#code#0;n#pre#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,16 +104,16 @@
       <file leaf-file-name="navbar.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/navbar.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="39" selection-start="1180" selection-end="1180" vertical-scroll-proportion="-11.153846" vertical-offset="118" max-vertical-offset="799">
+            <state line="23" column="19" selection-start="961" selection-end="961" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="1190">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="500.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/500.ejs">
+      <file leaf-file-name="header.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/header.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="2154" selection-end="2684" vertical-scroll-proportion="-7.8461537" vertical-offset="714" max-vertical-offset="1717">
+            <state line="24" column="86" selection-start="868" selection-end="1039" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="544">
               <folding />
             </state>
           </provider>
@@ -128,7 +122,7 @@
       <file leaf-file-name="greet-1.0.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/demo/greet-1.0.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="11" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="867">
+            <state line="14" column="10" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="867">
               <folding />
             </state>
           </provider>
@@ -144,22 +138,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/modules/demo/hello-2.0.js" />
-        <option value="$PROJECT_DIR$/modules/demo/hello-1.0.js" />
-        <option value="$PROJECT_DIR$/config.json" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/modules/demo/config.json" />
         <option value="$PROJECT_DIR$/modules/test/config.json" />
         <option value="$PROJECT_DIR$/modules/test/hi-1.0.js" />
-        <option value="$PROJECT_DIR$/views/navbar.ejs" />
-        <option value="$PROJECT_DIR$/views/header.ejs" />
-        <option value="$PROJECT_DIR$/views/footer.ejs" />
         <option value="$PROJECT_DIR$/views/docs.ejs" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/core/libraries/modules.js" />
         <option value="$PROJECT_DIR$/views/docs_module.ejs" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/docs.js" />
+        <option value="$PROJECT_DIR$/views/footer.ejs" />
+        <option value="$PROJECT_DIR$/views/header.ejs" />
+        <option value="$PROJECT_DIR$/modules/demo/greet-1.0.js" />
         <option value="$PROJECT_DIR$/views/docs_specific.ejs" />
+        <option value="$PROJECT_DIR$/views/about.ejs" />
+        <option value="$PROJECT_DIR$/views/navbar.ejs" />
+        <option value="$PROJECT_DIR$/routes/about.js" />
       </list>
     </option>
   </component>
@@ -225,6 +219,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="matilda" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1987,7 +1995,11 @@
       <created>1383973897076</created>
       <updated>1383973897076</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- revised position of version from REST and DOCS uri&#10;- currently working on documentation">
+      <created>1383990971988</created>
+      <updated>1383990971988</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2007,7 +2019,7 @@
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.76080245" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19772728" sideWeight="0.23919754" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19772728" sideWeight="0.6728395" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2056,33 +2068,13 @@
     <MESSAGE value="- removed Contact link" />
     <MESSAGE value="- added HTTPS/SSL support" />
     <MESSAGE value="- updated configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updated configuration" />
+    <MESSAGE value="- revised position of version from REST and DOCS uri&#10;- currently working on documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="- revised position of version from REST and DOCS uri&#10;- currently working on documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="9" selection-start="41" selection-end="41" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="414" selection-end="414" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="442">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/test/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="105" selection-start="107" selection-end="107" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="187">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/demo/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="11" selection-start="142" selection-end="142" vertical-scroll-proportion="0.08557047" vertical-offset="0" max-vertical-offset="596">
@@ -2104,30 +2096,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/navbar.ejs">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="39" selection-start="1180" selection-end="1180" vertical-scroll-proportion="-11.153846" vertical-offset="118" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="778" selection-end="778" vertical-scroll-proportion="0.5419463" vertical-offset="0" max-vertical-offset="596">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/footer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="449" selection-end="449" vertical-scroll-proportion="0.34228188" vertical-offset="0" max-vertical-offset="596">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/demo/greet-1.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="11" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="867">
+        <state line="12" column="16" selection-start="237" selection-end="237" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="340">
           <folding />
         </state>
       </provider>
@@ -2139,37 +2110,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/libraries/modules.js">
+    <entry file="file://$PROJECT_DIR$/views/footer.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="22" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="1479">
+        <state line="7" column="0" selection-start="183" selection-end="183" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="221">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/docs.js">
+    <entry file="file://$PROJECT_DIR$/views/header.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="16" selection-start="1619" selection-end="1619" vertical-scroll-proportion="0.0" vertical-offset="891" max-vertical-offset="1547">
+        <state line="24" column="86" selection-start="868" selection-end="1039" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/libraries/modules.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/demo/greet-1.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="10" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="867">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/docs_specific.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="48" selection-start="1055" selection-end="1055" vertical-scroll-proportion="-10.653846" vertical-offset="352" max-vertical-offset="1020">
+        <state line="91" column="0" selection-start="2673" selection-end="2673" vertical-scroll-proportion="-47.73077" vertical-offset="306" max-vertical-offset="1683">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#span#0;n#code#0;n#pre#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/docs_module.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="18" selection-start="0" selection-end="1381" vertical-scroll-proportion="-25.5" vertical-offset="0" max-vertical-offset="1003">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/docs.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="775" selection-end="955" vertical-scroll-proportion="-11.807693" vertical-offset="288" max-vertical-offset="884">
+        <state line="37" column="20" selection-start="0" selection-end="1174" vertical-scroll-proportion="-12.307693" vertical-offset="309" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/docs_module.ejs">
+    <entry file="file://$PROJECT_DIR$/routes/docs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="794" selection-end="794" vertical-scroll-proportion="0.5334477" vertical-offset="216" max-vertical-offset="1003">
+        <state line="34" column="0" selection-start="642" selection-end="824" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1632">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/navbar.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="19" selection-start="961" selection-end="961" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/about.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="19" selection-start="383" selection-end="383" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="0.21864952" vertical-offset="0" max-vertical-offset="622">
           <folding />
         </state>
       </provider>

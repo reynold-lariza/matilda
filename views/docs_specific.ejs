@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <%- include header.ejs %>
+
 </head>
 
 <body>
@@ -14,42 +15,80 @@
 
     <!-- Begin page content -->
     <div class="container">
+        <%
+        data.modules.forEach(function(mod,i){
+            if(data._module!=mod.name) return;
+
+                mod.func.forEach(function(f,i){
+            if(data._func!=f.name) return;
+            if(data._version!=f.version) return;
+        %>
+
         <div class="page-header">
-            You may click on any of the API below to get a detailed documentation.
+            <h3 id="grid-intro">/ <%=mod.name%> / <%=f.name%> / <%=f.version%></h3>
         </div>
-        <div class="bs-example">
-            <table class="table table-responsive">
-                <thead>
-                <tr>
-                    <th>Method</th>
-                    <th>Description</th>
-                </tr>
-                </thead>
-                <tbody>
+
+        <p><%=f.description%></p>
+
+        <br />
+        <div class="bs-callout bs-callout-info">
+            <h4>Input</h4>
+            <ul>
                 <%
-                data.modules.forEach(function(mod,i){
-                    if(data._module!=mod.name) return;
-
-                        mod.func.forEach(function(f,i){
-                        if(data._func!=f.name) return;
-                        if(data._version!=f.version) return;
-                %>
-                <tr>
-                    <td><a href="<%=mod.name%>/<%=f.name%>/<%=f.version%>" class=""><%=f.name%></a> <small><em>(ver <%=f.version%>)</em></small></td>
-                    <td><%=f.description%></td>
-                </tr>
-
+                for(var inp in f.input){
+                %><li><%=inp%><% if(f.input[inp].required) {%><code>(required)</code><% } else {%><code>(optional)</code><%} %>- <%=f.input[inp].description%> </li><%
+                }
+                 %>
+            </ul>
+            <h4>Output</h4>
+            <ul>
                 <%
-                });
+                for(var inp in f.output){
+                %><li><span><%=inp%></span> - <%=f.output[inp].description%></li><%
+                }
+                 %>
+            </ul>
 
-                }); %>
-                </tbody>
-            </table>
         </div>
+        <br />
+        <h4 id="grid-media-queries">Example:</h4>
+
+        <div class="highlight"><pre><code class="css">GET <span class="c">/api/rest/<%=mod.name%>/<%=f.name%>/<%=f.version%>/<%
+
+
+                        for(var inp in f.input)
+                        {
+                            var _default_val = encodeURIComponent(f.input[inp].default);
+                        %><span style="text-decoration: underline" class="param-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="<%=f.input[inp].description%>"><%=inp%></span>/<span><%=_default_val%></span>/<%
+                        }
+                        %></span><br /><br />OUTPUT:<br /><span class="c">{ <%
+                        var start = 0;
+                        for(var inp in f.output){
+                                if(start>0) { %>, <%}
+                        %>"<%=inp%>" : "<%=f.output[inp].default%>"<%
+
+                            start++;
+                        }
+                        %> }</span>
+
+                </code></pre></div>
+
+        <%
+        });
+
+        }); %>
+
+
         <!--<p>Back to main <a href="/">documentation</a> page.</p>-->
 
     </div>
 </div>
 <%- include footer.ejs %>
+<script type="text/javascript">
+    $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+    });
+</script>
+
 </body>
 </html>
