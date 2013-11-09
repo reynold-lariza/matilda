@@ -27,22 +27,45 @@
                 </thead>
                 <tbody>
                 <%
+                var found = false;
                 data.modules.forEach(function(mod,i){
-                    if(data._module!=mod.name) return;
+                    //if(data._module!=mod.name) return;
 
                     mod.func.forEach(function(f,i){
+
+                    //console.log(f.name + ' : ' + f.name.search(data.keyword) + ' = ' + data.keyword);
+                    if(f.name.search(data.keyword) == -1) return;
+                    if(data.keyword == undefined) return;
+                    if(f.name.search(data.keyword) != -1) { found = true; };
                         %>
                 <tr>
                     <td><a href="<%=mod.name%>/<%=f.name%>/<%=f.version%>" class=""><%=f.name%></a> <small><em>(ver <%=f.version%>)</em></small></td>
                     <td><%=f.description%></td>
                 </tr>
-
                 <%
                     });
 
                      }); %>
                 </tbody>
             </table>
+            <%if(!found){
+                %><div class="alert alert-<%
+                if(data.keyword==undefined) { %>warning<% }
+                else {%>danger<%}
+                 %>">
+                <%if(data.keyword==undefined) {
+                    %>Please enter a keyword to look for.<%
+                } else { %>
+                Nothing was found containing "<%=data.keyword%>".
+                <% } %>
+            </div>
+            <script type="text/javascript">$(document).ready(function(){
+                    $('.page-header').html('');
+                    $('.table-responsive').remove();
+                })</script>
+            <%
+            }%>
+
         </div>
         <!--<p>Back to main <a href="/">documentation</a> page.</p>-->
 

@@ -7,9 +7,9 @@ var query_string = require("querystring").stringify;
 exports.index = function(req, res){
 
     var filtered_params = undefined;
-    if(req.body)
+    if(req.body.keyword)
     {
-        filtered_params = req.body;
+        filtered_params = req.body.keyword;
     }
 
     var data = {
@@ -20,7 +20,7 @@ exports.index = function(req, res){
         'menu_modules' : false,
         'menu_about' : true,
         'menu_search' : true,
-        'keyword' : filtered_params
+        'keyword':filtered_params
     }
 
     res.setHeader('X-Powered-By', cfg._POWERED_BY_);
