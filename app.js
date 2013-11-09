@@ -8,7 +8,6 @@ var routes = require('./routes');
 var rest = require('./routes/rest');
 var docs = require('./routes/docs');
 var about = require('./routes/about');
-var http = require('http');
 
 var path = require('path');
 var fs = require('fs');
@@ -23,7 +22,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.favicon());
-//app.use(express.logger('dev'));
+app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
@@ -142,23 +141,22 @@ app.get('/about/', about.index);
 
 
 // load HTTP server
-if(cfg.HTTP_SERVER)
+if(cfg.HTTP_SERVER.enabled)
 {
-    http.createServer(app).listen(cfg.HTTP_PORT, function(){
-        console.log('HTTP Server listening on port ' + cfg.HTTP_PORT);
+    require('http').createServer(app).listen(cfg.HTTP_SERVER.port, function(){
+        console.log('HTTP Server listening on port ' + cfg.HTTP_SERVER.port);
     });
 }
 
 // load HTTPS/SSL server
-if(cfg.HTTPS_SERVER)
+if(cfg.HTTPS_SERVER.enabled)
 {
-    var https = require('https');
     var options = {
-        key: fs.readFileSync(__dirname + '/public/ssl/private.pem'),
-        cert: fs.readFileSync(__dirname + '/public/ssl/public.pem')
+        key: fs.readFileSync(__dirname + '/public/ssl/' + cfg.HTTPS_SERVER.key),
+        cert: fs.readFileSync(__dirname + '/public/ssl/' + cfg.HTTPS_SERVER.cert)
     };
-    https.createServer(options,app).listen(cfg.HTTPS_PORT, function(){
-        console.log('HTTPS/SSL Server listening on port ' + cfg.HTTPS_PORT);
+    require('https').createServer(options,app).listen(cfg.HTTPS_SERVER.port, function(){
+        console.log('HTTPS Server listening on port ' + cfg.HTTPS_SERVER.port);
     });
 
 }
