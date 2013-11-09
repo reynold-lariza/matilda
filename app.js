@@ -8,6 +8,7 @@ var routes = require('./routes');
 var rest = require('./routes/rest');
 var docs = require('./routes/docs');
 var about = require('./routes/about');
+var search = require('./routes/search');
 
 var path = require('path');
 var fs = require('fs');
@@ -34,9 +35,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Handle 404
 app.use(function(req, res) {
 
+    var data = {
+        'cfg' : cfg,
+        'menu_modules' : false,
+        'menu_about' : true,
+        'menu_search' : true
+    }
+
     if (req.accepts('html')) {
         // respond with html page
-        res.render('404', { 'title': 'Error', 'message' : 'Error : Page not found'});
+        res.render('404', { 'data': data});
         return;
     }
     else if (req.accepts('json')) {
@@ -61,9 +69,16 @@ app.use(function(req, res) {
 // Handle 500
 app.use(function(error, req, res, next) {
 
+    var data = {
+        'cfg' : cfg,
+        'menu_modules' : false,
+        'menu_about' : true,
+        'menu_search' : true
+    }
+
     if (req.accepts('html')) {
         // respond with html page
-        res.render('500', { 'title': 'Error', 'error' : error });
+        res.render('500', { 'title': 'Error', 'error' : error,'data' : data });
 
         return;
     }
@@ -138,6 +153,11 @@ app.get('/docs/', routes.index);
 // load about page
 app.get('/about', about.index);
 app.get('/about/', about.index);
+
+// load about page
+app.post('/api/search/', search.index);
+//app.get('/api/docs/search/', routes.index);
+
 
 
 // load HTTP server

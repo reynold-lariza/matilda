@@ -25,9 +25,11 @@ exports.api_index = function(req,res) {
 
 
     var data = {
+        'cfg' : cfg,
         'qs' : query_string,
         // get the list of modules
         'modules' : modules_list,
+        'menu_search' : true,
         'menu_modules' : false,
         'menu_about' : true
 
@@ -53,10 +55,12 @@ exports.api_module = function(req,res) {
 
 
     var data = {
+        'cfg' : cfg,
         'qs' : query_string,
         // get the list of modules
         'modules' : modules_list,
         '_module' : req.params._module_,
+        'menu_search' : true,
         'menu_modules' : true,
         'menu_about' : true
 
@@ -71,9 +75,11 @@ exports.api_module = function(req,res) {
 exports.api_specific = function(req,res) {
 
     var data = {
+        'cfg' : cfg,
         'qs' : query_string,
         // get the list of modules
         'modules' : modules_list,
+        'menu_search' : true,
         '_module' : req.params._module_,
         '_func' : req.params.func,
         '_version' : req.params.version,
