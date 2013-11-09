@@ -1,0 +1,10 @@
+// PRIORITIES
+- add database libraries/drivers (mysql, postgresql,sqlserver,oracle)
+- add couchbase library/driver
+- add redis library
+- add /core/language/ folder - english.json, -- default is english, and can be configured to which language to be used, located at /config.json
+- update the SSL certificates when publishing at production
+
+
+// OTHERS
+- add smpp library: only used for SMPP-SMSC connection
