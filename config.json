@@ -2,5 +2,9 @@
     "_POWERED_BY_" : "NodeJS - Express",
     "_DEVELOPED_BY_" : "eoanLabs - Reynold Lariza",
     "_FORMAT_" : "json",
-    "_DESCRIPTION_" : ""
+    "_DESCRIPTION_" : "",
+    "HTTP_SERVER" : true,
+    "HTTP_PORT" : 8080,
+    "HTTPS_SERVER" : true,
+    "HTTPS_PORT" : 443
 }
