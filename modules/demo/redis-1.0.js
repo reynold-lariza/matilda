@@ -40,16 +40,14 @@ exports.config = {
      */
     'action' : function(instance) {
 
-        var redis = require("redis"),
-            client = redis.createClient();
-
-        client.on("error", function (err) {
+        console.log(instance.db.cache);
+        instance.db.cache.on("error", function (err) {
             console.log("Error " + err);
         });
 
-        client.set("some_var", "A whole new world");
+        instance.db.cache.set("some_var", "A whole new world");
 
-        client.quit();
+        instance.db.cache.quit();
 
         instance.send({ "status" : 200, "response" : "Saved a value"});
 

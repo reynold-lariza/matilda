@@ -61,6 +61,12 @@
             "database" : "tsg_core_db",
             "active" : false
         },
+        "cache" : {
+            "driver" : "redis",
+            "host" : "localhost",
+            "port" : 6379,
+            "active" : true
+        },
       "@comment" : "----------------------------------------------------------------------"
     }
 }

@@ -40,24 +40,19 @@ exports.config = {
      */
     'action' : function(instance) {
 
-        var redis = require("redis"),
-            client = redis.createClient();
 
-        client.on("error", function (err) {
+        instance.db.cache.on("error", function (err) {
             console.log("Error " + err);
         });
 
 
-        client.get("some_var", function(err, reply) {
+        instance.db.cache.get("some_var", function(err, reply) {
 
             // reply is null when the key is missing
             instance.send({ "status" : 200, "response" : reply});
         });
 
-        client.quit();
-
-
-        //return { "status" : 200, "response" : "Greetings " + instance.param.name + ' '  +instance.param.last + "! from API v1.0" }
+        instance.db.cache.quit();
 
     }
 };
