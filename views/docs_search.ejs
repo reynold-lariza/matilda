@@ -39,7 +39,7 @@
                     if(f.name.search(data.keyword) != -1) { found = true; };
                         %>
                 <tr>
-                    <td><a href="<%=mod.name%>/<%=f.name%>/<%=f.version%>" class=""><%=f.name%></a> <small><em>(ver <%=f.version%>)</em></small></td>
+                    <td><a href="/api/docs/<%=mod.name%>/<%=f.name%>/<%=f.version%>" class=""><%=f.name%></a> <small><em>(ver <%=f.version%>)</em></small></td>
                     <td><%=f.description%></td>
                 </tr>
                 <%

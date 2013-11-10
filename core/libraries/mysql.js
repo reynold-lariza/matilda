@@ -7,6 +7,7 @@
 exports.mysql = {
     connect : function(_connection_string){
         var _mysql_driver = require("mysql");
+/*
 
         return  _mysql_driver.createConnection({
                 port : _connection_string.port,
@@ -15,15 +16,16 @@ exports.mysql = {
                 password: _connection_string.password,
                 database : _connection_string.database
                 });
+*/
 
 
-/*        return  _mysql_driver.createPool({
+        return  _mysql_driver.createPool({
                 port : _connection_string.port,
                 host : _connection_string.host,
                 user: _connection_string.username,
                 password: _connection_string.password,
                 database : _connection_string.database
-                });*/
+                });
 
 
 

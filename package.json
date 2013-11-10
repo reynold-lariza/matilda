@@ -10,6 +10,10 @@
     "ejs": "*",
     "easyxml" : "*",
     "wrench" : "*",
-    "querystring" : "*"
+    "querystring" : "*",
+      "mysql" : "*",
+      "redis" : "*",
+      "hiredis" : "*"
+
   }
 }

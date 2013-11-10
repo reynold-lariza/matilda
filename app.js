@@ -185,4 +185,3 @@ if(cfg.HTTPS_SERVER.enabled)
     });
 
 }
-

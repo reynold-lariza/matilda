@@ -91,21 +91,21 @@ var instance;
 var _api_rest_send_output = function(_result){
 
     if (instance.req.accepts('html')) {
-        instance.res.setHeader('Content-type', 'text/html');
+        //instance.res.setHeader('Content-type', 'text/html');
         _output = _result;
     }
     else if (instance.req.accepts('xml')) {
-        instance.res.setHeader('Content-type', 'application/xml');
+        //instance.res.setHeader('Content-type', 'application/xml');
         _output = require('easyxml').render(_result);
     }
     else if (instance.req.accepts('json')) {
-        instance.res.setHeader('Content-type', 'application/json');
+        //instance.res.setHeader('Content-type', 'application/json');
 
         _output = _result;
     }
     else
     {
-        instance.res.setHeader('Content-type', 'text/plain');
+        //instance.res.setHeader('Content-type', 'text/plain');
         _output = _result;
     }
     // send data to client

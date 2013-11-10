@@ -36,14 +36,14 @@ exports.config = {
 
         //console.log(instance.db.default);
 
-        instance.db.support.getConnection(function(err, connection) {
+        instance.db.default.getConnection(function(err, connection) {
             // connected! (unless `err` is set)
             if(err)
             {
                 return instance.send(err.toString());
             }
 
-            connection.query("SELECT * FROM status",function(err,results,fields){
+            connection.query("SELECT * FROM user_accounts",function(err,results,fields){
 
                 if(err) {
                     return instance.send(err.toString());
@@ -55,8 +55,9 @@ exports.config = {
 
 
             });
+            connection.release();
 
-            connection.end();
+
 
         });
 
