@@ -107,7 +107,12 @@ app.use(function(error, req, res, next) {
 if ('development' == app.get('env')) {
   //app.use(express.errorHandler());
 }
+/*app.error(function(err, req, res, next){
+    //check error information and respond accordingly
+    console.log(err.toString());
+});*/
 
+/*------------------------------------------------------------------------------------*/
 // GET : load and execute a REST API
 app.get('/api/rest/:_module_/:func/:version(\\d+\.\\d+)',rest.api.get);
 app.get('/api/rest/:_module_/:func/:version(\\d+\.\\d+)/*',rest.api.get);

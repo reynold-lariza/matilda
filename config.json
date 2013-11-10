@@ -1,22 +1,66 @@
 {
+    "@comment" : "----------------------------------------------------------------------",
+    "@comment" : "THIS IS THE APPLICATION CONFIGURATION",
+    "@comment" : "----------------------------------------------------------------------",
     "_POWERED_BY_" : "NodeJS - Express",
     "_DEVELOPED_URL_BY_" : "http://eoanlabs.com/",
     "_DEVELOPED_BY_" : "eoanLabs - Reynold Lariza",
     "_FORMAT_" : "json",
     "_DESCRIPTION_" : "",
 
+    "@comment" : "----------------------------------------------------------------------",
+    "@comment" : "WARNING : DISABLE THIS AT PRODUCTION AS IT CREATES MEMORY LEAKS       ",
+    "@comment" : "Set LOGS.error = false, and it will not write any uncaught error into ",
+    "@comment" : "the log file => /logs/error.log.",
+    "@comment" : "----------------------------------------------------------------------",
+    "LOGS" : {
+      "error_file" : false,
+      "error_console" : false
+    },
+    "@comment" : "----------------------------------------------------------------------",
+
     "HTTP_SERVER" : {
         "enabled" : true,
         "ip" : "0.0.0.0",
         "port" : 8080
     },
-
     "HTTPS_SERVER" : {
         "enabled" :true,
         "ip" : "0.0.0.0",
         "port" : 443,
-        "key" : "private.pem",
-        "cert" : "public.pem"
+        "key" : "private.key",
+        "cert" : "ssl.crt"
+    },
 
+    "@comment" : "----------------------------------------------------------------------",
+    "DATABASE" : {
+        "default" : {
+            "driver" : "mysql",
+            "host" : "localhost",
+            "port" : 3306,
+            "username" : "dev",
+            "password" : "dev123",
+            "database" : "tsg_core_db",
+            "active" : true
+        },
+        "support" : {
+            "driver" : "mysql",
+            "host" : "localhost",
+            "port" : 3306,
+            "username" : "dev",
+            "password" : "dev123",
+            "database" : "support_desk_app_db",
+            "active" : true
+        },
+        "pgsql" : {
+            "driver" : "postgresql",
+            "host" : "localhost",
+            "port" : 5432,
+            "username" : "dev",
+            "password" : "dev123",
+            "database" : "tsg_core_db",
+            "active" : false
+        },
+      "@comment" : "----------------------------------------------------------------------"
     }
 }

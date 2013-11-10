@@ -33,8 +33,8 @@ exports.config = {
      * @param param
      * @returns {string}
      */
-    'action' : function(param) {
+    'action' : function(instance) {
 
-        return { "status" : 200, "response" : "Hello " + param.name + "! from API v2.0"};
+        instance.send({ "status" : 200, "response" : "Hello " + instance.param.name + "! from API v2.0"});
     }
 };
