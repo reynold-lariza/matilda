@@ -1,0 +1,92 @@
+4 cores
+-------------------------------------------------------
+NodeJS v0.10.21 / node-mysql
+-------------------------------------------------------
+siege -d1 -c500 -t1m http://localhost:8080/api/rest/demo/mysql/4.0/name/Juan/
+- mysql : 4.0 (pooling)
+Transactions:                   1885 hits
+Availability:                  79.23 %
+Elapsed time:                  59.22 secs
+Data transferred:               0.09 MB
+Response time:                  0.03 secs
+Transaction rate:              31.83 trans/sec
+Throughput:                     0.00 MB/sec
+Concurrency:                    0.84
+Successful transactions:        1885
+Failed transactions:             494
+Longest transaction:            0.64
+Shortest transaction:           0.00
+
+Transactions:                   2445 hits
+Availability:                  83.19 %
+Elapsed time:                  59.39 secs
+Data transferred:               0.12 MB
+Response time:                  0.03 secs
+Transaction rate:              41.17 trans/sec
+Throughput:                     0.00 MB/sec
+Concurrency:                    1.10
+Successful transactions:        2445
+Failed transactions:             494
+Longest transaction:            0.81
+Shortest transaction:           0.00
+-------------------------------------------------------
+siege -d1 -c500 -t1m http://localhost:8080/api/rest/demo/mysql/2.0/name/Juan/
+- mysql : 2.0 (connect)
+Transactions:                   2966 hits
+Availability:                  85.90 %
+Elapsed time:                  59.43 secs
+Data transferred:               0.05 MB
+Response time:                  0.03 secs
+Transaction rate:              49.91 trans/sec
+Throughput:                     0.00 MB/sec
+Concurrency:                    1.38
+Successful transactions:        2966
+Failed transactions:             487
+Longest transaction:            1.02
+Shortest transaction:           0.00
+
+Transactions:                   2596 hits
+Availability:                  84.18 %
+Elapsed time:                  59.08 secs
+Data transferred:               0.05 MB
+Response time:                  0.03 secs
+Transaction rate:              43.94 trans/sec
+Throughput:                     0.00 MB/sec
+Concurrency:                    1.13
+Successful transactions:        2596
+Failed transactions:             488
+Longest transaction:            0.75
+Shortest transaction:           0.00
+-------------------------------------------------------
+==================================================================
+1 core
+-------------------------------------------------------
+siege -d1 -c500 -t1m http://localhost:8080/api/rest/demo/mysql/4.0/name/Juan/
+Transactions:                    600 hits
+Availability:                  54.64 %
+Elapsed time:                  59.78 secs
+Data transferred:               0.03 MB
+Response time:                  0.03 secs
+Transaction rate:              10.04 trans/sec
+Throughput:                     0.00 MB/sec
+Concurrency:                    0.26
+Successful transactions:         600
+Failed transactions:             498
+Longest transaction:            1.39
+Shortest transaction:           0.00
+-------------------------------------------------------
+siege -d1 -c500 -t1m http://localhost:8080/api/rest/demo/mysql/2.0/name/Juan/
+- mysql : 2.0 (connect)
+
+Transactions:                    511 hits
+Availability:                  50.59 %
+Elapsed time:                  59.09 secs
+Data transferred:               2.67 MB
+Response time:                  0.02 secs
+Transaction rate:               8.65 trans/sec
+Throughput:                     0.05 MB/sec
+Concurrency:                    0.21
+Successful transactions:         511
+Failed transactions:             499
+Longest transaction:            1.23
+Shortest transaction:           0.00

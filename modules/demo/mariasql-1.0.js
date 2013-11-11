@@ -2,7 +2,7 @@
  * Created by reynold on 11/3/13.
  */
 exports.config = {
-    'description' : 'REDIS Test Client',
+    'description' : 'Greets a person',
     'author' : 'Reynold L.',
     'enabled' : true,
 
@@ -41,18 +41,24 @@ exports.config = {
     'action' : function(instance) {
 
 
-        instance.db.cache.on("error", function (err) {
-            console.log("Error " + err);
+        var mariadb = require("mariasql");
+        var db = new mariadb();
+        db.connect({
+            host: "localhost",
+            user: "dev",
+            password: "dev123",
+            db: "tsg_core_db"
         });
 
-        instance.db.cache.set("some_var", instance.param.name);
+        db.query("SELECT * FROM user_accounts")
+            .on("result", function(result){
+                result.on("end", function(info){
+                    console.log(info);
+                    console.log(result);
+                    db.end();
+                });
+            });
 
-        instance.db.cache.quit();
-
-        instance.send({ "status" : 200, "response" : "Saved a value"});
-
-
-        //return { "status" : 200, "response" : "Greetings " + instance.param.name + ' '  +instance.param.last + "! from API v1.0" }
-
+        return { "status" : 200, "response" : 'test' };
     }
 };
