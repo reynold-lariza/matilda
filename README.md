@@ -8,9 +8,9 @@ This framework is a port of EHMA PHP Framework.
 
 Installation and Usage
 ----------------------
-
-npm install
-
+<pre>
+<code>npm install</code>
+</pre>
 Reporting Issues
 ----------------
 
