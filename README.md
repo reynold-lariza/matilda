@@ -4,16 +4,14 @@ Matilda NodeJS Framework
 
 A SOA-REST application framework.
 
-This framework is a port of EHMA PHP Framework. 
+This framework is a port of EHMA PHP Framework.
 
 Installation and Usage
 ----------------------
 
-<pre>
-<code>
-	npm install
-</code>
-</pre>
+	This is a normal paragraph:
+
+	This is a code block.
 
 Reporting Issues
 ----------------
