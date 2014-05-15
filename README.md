@@ -10,7 +10,9 @@ Installation and Usage
 ----------------------
 
 <pre>
-<code>npm install</code>
+<code>
+	npm install
+</code>
 </pre>
 
 Reporting Issues
