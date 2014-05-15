@@ -109,6 +109,7 @@ var _api_rest_send_output = function(_result){
         _output = _result;
     }
     // send data to client
+    instance.res.connection.setTimeout(0);
     instance.res.send(_output);
 
 

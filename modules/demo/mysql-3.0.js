@@ -36,14 +36,14 @@ exports.config = {
 
         //console.log(instance.db.default);
 
-        instance.db.default.getConnection(function(err, connection) {
+        instance.db.support.getConnection(function(err, connection) {
             // connected! (unless `err` is set)
             if(err)
             {
                 return instance.send(err.toString());
             }
 
-            connection.query("SELECT * FROM user_accounts",function(err,results,fields){
+            connection.query("INSERT INTO folders(name) values("+Math.random()+")",function(err,results,fields){
 
                 if(err) {
                     return instance.send(err.toString());
@@ -51,7 +51,8 @@ exports.config = {
 
                 //console.log(results);
 
-                instance.send({ "status" : 200, "response" : results });
+                //instance.send({ "status" : 200, "response" : results });
+                instance.send({ "status" : 200, "response" : true});
 
 
             });
