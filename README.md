@@ -9,9 +9,10 @@ This framework is a port of EHMA PHP Framework.
 Installation and Usage
 ----------------------
 
-	This is a normal paragraph:
+From the project root directory, execute the following command in the terminal:
 
-	This is a code block.
+	npm install
+
 
 Reporting Issues
 ----------------
